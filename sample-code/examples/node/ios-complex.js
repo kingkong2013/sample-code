@@ -20,7 +20,7 @@ describe("ios complex", function () {
     driver = wd.promiseChainRemote(serverConfig);
     require("./helpers/logging").configure(driver);
 
-    var desired = _.clone(require("./helpers/caps").ios81);
+    var desired = _.clone(require("./helpers/caps").ios92);
     desired.app = require("./helpers/apps").iosUICatalogApp;
     if (process.env.npm_package_config_sauce) {
       desired.name = 'ios - complex';
